@@ -1,0 +1,27 @@
+{
+    "name": "Feedback Filler",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Whose got the time to sit and click each of those option. Let this extension do it for ya..",
+    "icons": {
+        "16": "icons/checker_16x16.png",
+        "32": "icons/checker_32x32.png",
+        "48": "icons/checker_48x48.png",
+        "128": "icons/checker_128x128.png"
+      },
+    "background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_title": "Fill em Up!"
+    },
+    "permissions": [
+      "https://*/*",
+      "http://*/*",
+      "tabs",
+      "activeTab"
+    ]
+  }
